@@ -1,0 +1,3 @@
+# count-characters
+
+Count characters.

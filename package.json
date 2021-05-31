@@ -1,0 +1,30 @@
+{
+  "name": "count-characters",
+  "private": true,
+  "description": "Count characters.",
+  "homepage": "https://github.com/1000ch/count-characters#readme",
+  "bugs": {
+    "url": "https://github.com/1000ch/count-characters/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1000ch/count-characters.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Shogo Sensui",
+    "email": "shogosensui@gmail.com",
+    "url": "https://github.com/1000ch"
+  },
+  "scripts": {
+    "test": "xo"
+  },
+  "xo": {
+    "envs": [
+      "node",
+      "browser"
+    ],
+    "space": 2
+  },
+  "devDependencies": {}
+}
