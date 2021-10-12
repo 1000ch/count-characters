@@ -1,14 +1,16 @@
 import {documentReady} from 'https://unpkg.com/html-ready';
 
 documentReady.then(() => {
-  const countInput  = document.querySelector('#count-input');
-  const countOutput = document.querySelector('#count-output');
+  const textarea  = document.querySelector('textarea');
+  const count = document.querySelector('#count');
+  const countTrimmed = document.querySelector('#count-trimmed');
 
-  countInput.addEventListener('input', () => {
+  textarea.addEventListener('input', () => {
     try {
-      countOutput.textContent = `${countInput.value.length} characters`;
+      count.textContent = textarea.value?.length;
+      countTrimmed.textContent = textarea.value?.replaceAll(/\s/g, '').length;
     } catch (error) {
-      countOutput.textContent = error.message;
+      console.error(error.message);
     }
   });
 });
